@@ -5,7 +5,7 @@ import { router, Slot } from 'expo-router';
 import MenuIcon from '@carbon/icons/es/menu/20';
 import CloseIcon from '@carbon/icons/es/close/20';
 import ExitIcon from '@carbon/icons/es/logout/20';
-import navigationConfig from '@/configs/navigation';
+import navigationConfig from '@/src/configs/navigation';
 
 const styles = StyleSheet.create({
   view: {

@@ -4,7 +4,7 @@ import { ViewWrapper, Text, TopNavigationBarLogin, InlineLink, TextInput, Passwo
 import { router } from 'expo-router';
 import ArrowRightIcon from '@carbon/icons/es/arrow--right/20';
 import InformationIcon from '@carbon/icons/es/information/20';
-import applicationConfig from '@/configs/application';
+import applicationConfig from '@/src/configs/application';
 import { TestSignUpForm } from './signUp';
 
 export default class Home extends React.Component {
