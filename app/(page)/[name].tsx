@@ -6,8 +6,8 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect, useState } from 'react';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import routersConfig from '@/configs/routers';
-import pagesConfig from '@/configs/pages';
+import routersConfig from '@/src/configs/routers';
+import pagesConfig from '@/src/configs/pages';
 
 export default function Page({ setTitle }: any) {
   const { name } = useLocalSearchParams();
@@ -19,7 +19,7 @@ export default function Page({ setTitle }: any) {
     if (route) {
       const { title, page } = route;
       const jsonObject = Object.entries(pagesConfig).find(([key, val]) => key === page)?.[1];
-      console.log(jsonObject);
+      //console.log(jsonObject);
       setForm(jsonObject);
     }
   }, [name]);
